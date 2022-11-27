@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="373.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mostrarCancionesArtistasController">
+   <children>
+      <TextField fx:id="txtArtistaBuscar" layoutX="225.0" layoutY="72.0" />
+      <Label layoutX="8.0" layoutY="74.0" text="Ingrese el nombre del artista">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="23.0" text="Mostrar canciones ">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaCanciones" layoutX="106.0" layoutY="111.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="columnNomCancion" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="columnAlbum" prefWidth="75.0" text="Album" />
+        </columns>
+      </TableView>
+      <Button layoutX="177.0" layoutY="323.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+   </children>
+</AnchorPane>

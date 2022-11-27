@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label layoutX="92.0" layoutY="55.0" text="Usuario" />
+      <TextField fx:id="txtUsuario" layoutX="33.0" layoutY="88.0" />
+      <Label layoutX="100.0" layoutY="127.0" text="Clave" />
+      <PasswordField fx:id="txtPassw" layoutX="35.0" layoutY="157.0" />
+      <RadioButton fx:id="RBuser" layoutX="68.0" layoutY="275.0" mnemonicParsing="false" text="Usuario">
+         <toggleGroup>
+            <ToggleGroup fx:id="TipoIngreso" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="RBadmin" layoutX="68.0" layoutY="304.0" mnemonicParsing="false" text="Administrador" toggleGroup="$TipoIngreso" />
+      <Button layoutX="88.0" layoutY="200.0" mnemonicParsing="false" onAction="#ingresar" text="Ingresar" />
+      <Button layoutX="73.0" layoutY="237.0" mnemonicParsing="false" onAction="#crearUsu" text="Crear usuario" />
+      <Pane layoutX="241.0" prefHeight="401.0" prefWidth="240.0">
+         <children>
+            <ImageView fitHeight="290.0" fitWidth="280.0" layoutX="-44.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Logo_sputafy.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
