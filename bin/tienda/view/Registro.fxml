@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="428.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.RegistroController">
+   <children>
+      <ImageView fitHeight="428.0" fitWidth="317.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/16018.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="4.0" layoutY="13.0" prefHeight="403.0" prefWidth="310.0">
+         <children>
+            <Text layoutX="116.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUser" layoutX="147.0" layoutY="111.0" />
+            <Text fill="WHITE" layoutX="14.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de usuario">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="47.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="72.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font></Text>
+            <TextField fx:id="txtCorreo" layoutX="147.0" layoutY="203.0" />
+            <Button fx:id="btnRegistrar" layoutX="61.0" layoutY="295.0" mnemonicParsing="false" onAction="#registrarAction" text="Registrar">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="12.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="password" layoutX="147.0" layoutY="155.0" />
+            <Button fx:id="btnAtras" layoutX="184.0" layoutY="295.0" mnemonicParsing="false" onAction="#atrasAction" text="Atras">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

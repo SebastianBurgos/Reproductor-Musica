@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="293.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.AgregarArtistaController">
+   <children>
+      <ImageView fitHeight="294.0" fitWidth="389.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="41.0" layoutY="86.0" text="Nombre" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="11.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Storify" wrappingWidth="149.65625">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="48.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b25661" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Label layoutX="19.0" layoutY="153.0" text="Nacionalidad" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="160.0" layoutY="87.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="txtNacionalidad" layoutX="160.0" layoutY="154.0" prefHeight="25.0" prefWidth="201.0" />
+      <Button fx:id="btnGuardar" layoutX="160.0" layoutY="214.0" mnemonicParsing="false" onAction="#registrarArtistaAction" text="Guardar" />
+      <Button fx:id="btnAtras" layoutX="315.0" layoutY="14.0" mnemonicParsing="false" onAction="#atrasAction" prefHeight="25.0" prefWidth="60.0" text="Atras">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="658.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.TiendaController">
+   <children>
+      <ImageView fitHeight="664.0" fitWidth="1028.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/15979-retro.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#cf45d3" layoutX="403.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Storify" wrappingWidth="198.65625">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="64.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAtras" layoutX="944.0" layoutY="14.0" mnemonicParsing="false" onAction="#atrasAction" prefHeight="25.0" prefWidth="64.0" text="Atras">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableCanciones" layoutX="19.0" layoutY="196.0" prefHeight="158.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="colCancionNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="colCancionArtista" prefWidth="75.0" text="Artista" />
+            <TableColumn fx:id="colCancionDuracion" prefWidth="75.0" text="Duracion" />
+            <TableColumn fx:id="colCancionGenero" prefWidth="75.0" text="Genero" />
+            <TableColumn fx:id="colCancionAlbum" prefWidth="75.0" text="Album" />
+            <TableColumn fx:id="colCancionYear" prefWidth="75.0" text="Año" />
+        </columns>
+      </TableView>
+      <Label layoutX="19.0" layoutY="106.0" text="Buscar" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFiltroCancion" layoutX="82.0" layoutY="107.0" prefHeight="25.0" prefWidth="382.0" />
+      <Button fx:id="btnAgregarCancion" layoutX="71.0" layoutY="369.0" mnemonicParsing="false" onAction="#agregarCancionAction" prefHeight="25.0" prefWidth="132.0" text="Agregar a favoritos" />
+      <Button fx:id="btnReproducir" layoutX="718.0" layoutY="196.0" mnemonicParsing="false" onAction="#btnReproducir" prefHeight="37.0" prefWidth="86.0" text="Reproducir" />
+      <TableView fx:id="tableFavoritos" layoutX="19.0" layoutY="447.0" prefHeight="199.0" prefWidth="451.0">
+         <columns>
+            <TableColumn fx:id="colFavNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colFavArtista" prefWidth="75.0" text="Artista" />
+            <TableColumn fx:id="colFavDuracion" prefWidth="75.0" text="Duracion" />
+            <TableColumn fx:id="colFavGenero" prefWidth="75.0" text="Genero" />
+            <TableColumn fx:id="colFavAlbum" prefWidth="75.0" text="Album" />
+            <TableColumn fx:id="colFavYear" prefWidth="75.0" text="Año" />
+         </columns>
+      </TableView>
+      <Label layoutX="202.0" layoutY="408.0" text="Favoritos">
+         <font>
+            <Font name="Yu Gothic Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#54b6dd" />
+                  <Stop color="#54b6dd" offset="0.3298969072164947" />
+                  <Stop color="#56b5db" offset="0.711340206185567" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="197.0" layoutY="146.0" text="Canciones">
+         <font>
+            <Font name="Yu Gothic Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#54b6dd" />
+                  <Stop color="#54b6dd" offset="0.3298969072164948" />
+                  <Stop color="#56b5db" offset="0.711340206185567" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="btnEliminarCancion" layoutX="290.0" layoutY="369.0" mnemonicParsing="false" onAction="#EliminarCancionAction" prefHeight="25.0" prefWidth="132.0" text="Eliminar de favoritos" />
+      <WebView fx:id="web" layoutX="515.0" layoutY="258.0" prefHeight="289.0" prefWidth="491.0" />
+   </children>
+</AnchorPane>

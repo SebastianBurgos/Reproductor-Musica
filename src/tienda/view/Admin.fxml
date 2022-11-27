@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="524.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.AdminController">
+   <children>
+      <ImageView fitHeight="526.0" fitWidth="836.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/6191107.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="8.0" layoutY="479.0" mnemonicParsing="false" onAction="#atrasAction" prefHeight="31.0" prefWidth="84.0" text="Atras">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="42.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Storify" wrappingWidth="198.65625">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="64.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b2af00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TableView fx:id="tableCanciones" layoutX="274.0" layoutY="325.0" prefHeight="148.0" prefWidth="515.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="139.0" text="Nombre" />
+          <TableColumn fx:id="colCodigo" minWidth="0.0" prefWidth="71.0" text="Codigo" />
+            <TableColumn fx:id="colGenero" minWidth="0.0" prefWidth="96.0" text="Genero" />
+            <TableColumn fx:id="colAlbum" prefWidth="98.0" text="Album" />
+            <TableColumn fx:id="colArtista" prefWidth="110.0" text="Nombre Artista" />
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="353.0" text="Busqueda de Canciones" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="254.0" layoutY="39.0" orientation="VERTICAL" prefHeight="449.0" prefWidth="3.0" />
+      <Text layoutX="398.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrador" wrappingWidth="247.65625">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b2af00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="274.0" layoutY="106.0" mnemonicParsing="false" onAction="#agregarArtistaAction" text="Gestionar Artistas" />
+      <Button layoutX="274.0" layoutY="291.0" mnemonicParsing="false" onAction="#agregarCancionAction" text="Gestionar Canciones" />
+      <TextField fx:id="txtBusquedaCanciones" layoutX="39.0" layoutY="390.0" prefHeight="25.0" prefWidth="189.0" />
+      <TableView fx:id="tableArtistas" layoutX="274.0" layoutY="138.0" prefHeight="133.0" prefWidth="515.0">
+         <columns>
+            <TableColumn fx:id="colNombreArtista" prefWidth="177.0" text="Nombre" />
+            <TableColumn fx:id="colCodigoArtista" minWidth="0.0" prefWidth="139.0" text="Codigo" />
+            <TableColumn fx:id="colNacionalidadArtista" prefWidth="198.0" text="Nacionalidad" />
+         </columns>
+      </TableView>
+      <Label layoutX="52.0" layoutY="155.0" text="Busqueda de Artistas" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBusquedaArtistas" layoutX="47.0" layoutY="192.0" prefHeight="25.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>
