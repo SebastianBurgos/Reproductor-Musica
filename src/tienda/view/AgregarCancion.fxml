@@ -8,73 +8,74 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="576.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.AgregarCancionController">
+<AnchorPane prefHeight="497.0" prefWidth="717.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.AgregarCancionController">
    <children>
-      <ImageView fitHeight="576.0" fitWidth="389.0" pickOnBounds="true">
+      <ImageView fitHeight="497.0" fitWidth="717.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../images/2.jpg" />
+            <Image url="@../../../images/fondo_admin.png" />
          </image>
       </ImageView>
-      <Label layoutX="41.0" layoutY="86.0" text="Nombre" textFill="WHITE">
+      <Label layoutX="28.0" layoutY="247.0" text="Nombre" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Text layoutX="11.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Storify" wrappingWidth="149.65625">
+      <Text layoutX="227.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar Cancion" textAlignment="CENTER" wrappingWidth="264.65625">
          <font>
-            <Font name="Yu Gothic UI Semibold" size="48.0" />
+            <Font name="Yu Gothic UI Semibold" size="29.0" />
          </font>
          <fill>
-            <LinearGradient endX="1.0" endY="1.0">
+            <LinearGradient endX="0.44285714285714284" endY="1.0" startX="0.4238095238095238">
                <stops>
                   <Stop color="#b25661" />
-                  <Stop color="WHITE" offset="1.0" />
+                  <Stop color="BLACK" offset="1.0" />
                </stops>
             </LinearGradient>
          </fill>
       </Text>
-      <Label layoutX="37.0" layoutY="153.0" text="Duracion" textFill="WHITE">
+      <Label layoutX="394.0" layoutY="249.0" text="Duracion" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="46.0" layoutY="214.0" text="Genero" textFill="WHITE">
+      <Label layoutX="28.0" layoutY="303.0" text="Genero" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="47.0" layoutY="278.0" text="Artista" textFill="WHITE">
+      <Label layoutX="220.0" layoutY="361.0" text="Link cancion" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="33.0" layoutY="344.0" text="Link cancion" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font>
-      </Label>
-      <TextField fx:id="txtNombre" layoutX="160.0" layoutY="87.0" prefHeight="25.0" prefWidth="201.0" />
-      <TextField fx:id="txtDuracion" layoutX="160.0" layoutY="154.0" prefHeight="25.0" prefWidth="201.0" />
-      <TextField fx:id="txtGenero" layoutX="160.0" layoutY="215.0" prefHeight="25.0" prefWidth="201.0" />
-      <TextField fx:id="txtArtista" layoutX="160.0" layoutY="279.0" prefHeight="25.0" prefWidth="201.0" />
-      <TextField fx:id="txtLink" layoutX="160.0" layoutY="345.0" prefHeight="25.0" prefWidth="201.0" />
-      <Button fx:id="btnGuardar" layoutX="165.0" layoutY="513.0" mnemonicParsing="false" onAction="#registrarCancionAction" text="Guardar" />
-      <Button fx:id="btnAtras" layoutX="315.0" layoutY="14.0" mnemonicParsing="false" onAction="#atrasAction" prefHeight="25.0" prefWidth="60.0" text="Atras">
+      <TextField fx:id="txtNombre" layoutX="151.0" layoutY="241.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="txtDuracion" layoutX="488.0" layoutY="239.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="txtGenero" layoutX="150.0" layoutY="298.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="txtLink" layoutX="353.0" layoutY="355.0" prefHeight="43.0" prefWidth="331.0" />
+      <Button fx:id="btnGuardar" layoutX="273.0" layoutY="423.0" mnemonicParsing="false" onAction="#registrarCancionAction" text="Agregar Canción" />
+      <Button fx:id="btnAtras" layoutX="589.0" layoutY="13.0" mnemonicParsing="false" onAction="#atrasAction" prefHeight="41.0" prefWidth="94.0" text="Salir">
          <font>
             <Font name="Yu Gothic UI Semibold" size="12.0" />
          </font>
       </Button>
-      <TextField fx:id="txtYear" layoutX="160.0" layoutY="403.0" prefHeight="25.0" prefWidth="201.0" />
-      <Label layoutX="59.0" layoutY="402.0" text="Año" textFill="WHITE">
+      <TextField fx:id="txtYear" layoutX="88.0" layoutY="353.0" prefHeight="43.0" prefWidth="103.0" />
+      <Label layoutX="28.0" layoutY="361.0" text="Año" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtAlbum" layoutX="160.0" layoutY="469.0" prefHeight="25.0" prefWidth="201.0" />
-      <Label layoutX="57.0" layoutY="468.0" text="Album" textFill="WHITE">
+      <TextField fx:id="txtAlbum" layoutX="484.0" layoutY="298.0" prefHeight="25.0" prefWidth="201.0" />
+      <Label layoutX="404.0" layoutY="306.0" text="Album" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
+      <TableView fx:id="tableArtistas" layoutX="28.0" layoutY="68.0" prefHeight="155.0" prefWidth="662.0">
+         <columns>
+            <TableColumn fx:id="colNombreArtista" prefWidth="275.0" text="Nombre" />
+            <TableColumn fx:id="colCodigoArtista" minWidth="0.0" prefWidth="186.0" text="Codigo" />
+            <TableColumn fx:id="colNacionalidadArtista" prefWidth="200.0" text="Nacionalidad" />
+         </columns>
+      </TableView>
    </children>
 </AnchorPane>

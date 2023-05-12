@@ -1,0 +1,8 @@
+#Artistas
+123123;Hector Lavoe;Colombiana;true
+345345;Celia Cruz;Cubana;true/false
+#Canciones
+Hector Lavoe;El ladron;Ladronismo;1999;123;Salsa;https://www.youtube.com/watch?v=8n5RNPzpcVg
+Hector Lavoe;La familia;Familismo;1989;323;Salsa;https://www.youtube.com/watch?v=BNo0vkEYWRc
+Hector Lavoe;Tu casa;Casismo;2001;333;Salsa;https://www.youtube.com/watch?v=qYkpURie5cU
+Celia Cruz;Cruces de Cera;Ceracion;1020;322;Balada;https://www.youtube.com/watch?v=imeXSRNRMeg

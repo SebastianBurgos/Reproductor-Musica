@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="315.0" prefWidth="328.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.ReporteController">
+   <children>
+      <ImageView fitHeight="315.0" fitWidth="328.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/fondo_main.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="78.0" layoutY="94.0" text="Genero Con Mas Canciones:" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGeneroPopular" layoutX="101.0" layoutY="133.0" prefHeight="24.0" prefWidth="203.0" textFill="#de87ff">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblArtistaPopular" layoutX="101.0" layoutY="218.0" prefHeight="24.0" prefWidth="203.0" textFill="#de87ff">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="176.0" text="Artista Mas Popular:" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="25.0" prefHeight="24.0" prefWidth="122.0" text="Reporte" textAlignment="CENTER" textFill="#3ae05a">
+         <font>
+            <Font name="Forte" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

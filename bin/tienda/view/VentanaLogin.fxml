@@ -7,26 +7,31 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="367.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.LoginController">
+<AnchorPane prefHeight="367.0" prefWidth="583.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.LoginController">
    <children>
       <ImageView fitHeight="374.0" fitWidth="583.0" layoutY="-1.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../images/15991-retro.jpg" />
+            <Image url="@../../../images/fondo_login.png" />
          </image>
       </ImageView>
-      <Pane layoutX="280.0" layoutY="62.0" prefHeight="281.0" prefWidth="267.0">
+      <Pane layoutX="14.0" layoutY="24.0" prefHeight="326.0" prefWidth="261.0">
          <children>
-            <Text layoutX="85.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iniciar Sesion" wrappingWidth="112.0625">
+            <Text layoutX="12.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Bienvenido!" textAlignment="CENTER" wrappingWidth="237.0625">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Forte" size="34.0" />
                </font>
             </Text>
-            <TextField fx:id="user" layoutX="67.0" layoutY="75.0" prefHeight="25.0" prefWidth="149.0" promptText="Usuario" />
-            <PasswordField fx:id="password" layoutX="67.0" layoutY="116.0" prefHeight="25.0" prefWidth="149.0" promptText="Contraseña" />
-            <Button fx:id="btnIngresar" layoutX="56.0" layoutY="229.0" mnemonicParsing="false" onAction="#ingresarAction" text="Ingresar" />
-            <Button fx:id="btnRegistrar" layoutX="171.0" layoutY="229.0" mnemonicParsing="false" onAction="#registrarAction" text="Registrarse" />
-            <ComboBox fx:id="comboBoxRol" layoutX="67.0" layoutY="165.0" prefWidth="150.0" promptText="Rol" />
+            <TextField fx:id="txtUsername" layoutX="12.0" layoutY="83.0" prefHeight="36.0" prefWidth="237.0" promptText="Usuario" />
+            <PasswordField fx:id="txtPassword" layoutX="12.0" layoutY="142.0" prefHeight="43.0" prefWidth="237.0" promptText="Contraseña" />
+            <Button fx:id="btnIngresar" layoutX="14.0" layoutY="281.0" mnemonicParsing="false" onAction="#ingresarAction" text="Ingresar" />
+            <Button fx:id="btnRegistrar" layoutX="131.0" layoutY="281.0" mnemonicParsing="false" onAction="#registrarAction" text="Registrarse" />
+            <ComboBox fx:id="comboBoxRol" layoutX="56.0" layoutY="208.0" prefWidth="150.0" promptText="Rol" />
          </children>
       </Pane>
+      <Text fill="#007190" layoutX="442.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Storify" textAlignment="CENTER" wrappingWidth="140.0625">
+         <font>
+            <Font name="Forte" size="42.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

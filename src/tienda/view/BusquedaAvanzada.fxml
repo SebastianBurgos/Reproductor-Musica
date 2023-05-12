@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="430.0" prefWidth="565.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.BusquedaAvanzadaController">
+   <children>
+      <ImageView fitHeight="430.0" fitWidth="565.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/fondo_main.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="16.0" layoutY="179.0" prefHeight="230.0" prefWidth="529.0" style="-fx-background-color: gray;">
+         <children>
+            <Button layoutX="187.0" layoutY="59.0" mnemonicParsing="false" onAction="#buscarO" prefHeight="41.0" prefWidth="154.0" text="Buscar O" />
+            <TextField fx:id="txtBuscarY" layoutX="132.0" layoutY="110.0" prefHeight="43.0" prefWidth="371.0" promptText="Ingrese dos o mas atributos" />
+            <Label layoutX="10.0" layoutY="119.0" prefHeight="24.0" prefWidth="133.0" text="Búsqueda Y:" textFill="WHITE">
+               <font>
+                  <Font name="Forte" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="187.0" layoutY="166.0" mnemonicParsing="false" onAction="#buscarY" prefHeight="41.0" prefWidth="154.0" text="Buscar Y" />
+         </children>
+      </Pane>
+      <Label layoutX="26.0" layoutY="75.0" prefHeight="24.0" prefWidth="255.0" text="Buscar canciones por artista:" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="14.0" prefHeight="35.0" prefWidth="270.0" text="Búsqueda Avanzada" textAlignment="CENTER" textFill="#3ae05a">
+         <font>
+            <Font name="Forte" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombreArtista" layoutX="281.0" layoutY="65.0" prefHeight="43.0" prefWidth="241.0" promptText="Ingrese el nombre del artista" />
+      <Label layoutX="26.0" layoutY="196.0" prefHeight="24.0" prefWidth="133.0" text="Búsqueda O:" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBuscarO" layoutX="153.0" layoutY="187.0" prefHeight="43.0" prefWidth="371.0" promptText="Ingrese dos o mas atributos" />
+      <Button layoutX="206.0" layoutY="121.0" mnemonicParsing="false" onAction="#buscarCancionesPorArtista" prefHeight="41.0" prefWidth="154.0" text="Buscar" />
+   </children>
+</AnchorPane>

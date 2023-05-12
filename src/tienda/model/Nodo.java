@@ -1,6 +1,18 @@
 package tienda.model;
 
-public class Nodo <T>{
+import java.io.Serializable;
+
+/**
+ * Clase Nodo de la lista enlazada que contiene las canciones
+ * @author Sebastian Burgos Puentes
+ *
+ * @param <T>
+ */
+public class Nodo <T> implements Serializable{
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 	private Nodo<T> anterior, siguiente;
 	private T dato;
 
@@ -10,6 +22,7 @@ public class Nodo <T>{
 	 * @param anterior Enlace al Nodo anterior
 	 * @param siguiente Enlace al siguiente Nodo
 	 */
+	@SuppressWarnings("unused")
 	private Nodo(Nodo<T> anterior, Nodo<T> siguiente, T dato) {
 		super();
 		this.anterior = anterior;

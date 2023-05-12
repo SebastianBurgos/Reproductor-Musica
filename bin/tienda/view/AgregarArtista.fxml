@@ -8,43 +8,50 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="293.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.AgregarArtistaController">
+<AnchorPane prefHeight="293.0" prefWidth="389.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.controller.AgregarArtistaController">
    <children>
-      <ImageView fitHeight="294.0" fitWidth="389.0" pickOnBounds="true">
+      <ImageView fitHeight="440.0" fitWidth="389.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../images/2.jpg" />
+            <Image url="@../../../images/fondo_admin.png" />
          </image>
       </ImageView>
-      <Label layoutX="41.0" layoutY="86.0" text="Nombre" textFill="WHITE">
+      <Label layoutX="19.0" layoutY="148.0" text="Nombre" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Text layoutX="11.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Storify" wrappingWidth="149.65625">
+      <Text layoutX="14.0" layoutY="103.0" stroke="#f80f0f" strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar Artista" textAlignment="CENTER" wrappingWidth="361.65625">
          <font>
-            <Font name="Yu Gothic UI Semibold" size="48.0" />
+            <Font name="Yu Gothic UI Semibold" size="33.0" />
          </font>
          <fill>
-            <LinearGradient endX="1.0" endY="1.0">
+            <LinearGradient endX="0.819047619047619" endY="0.6142857142857142" startX="0.8095238095238095">
                <stops>
                   <Stop color="#b25661" />
-                  <Stop color="WHITE" offset="1.0" />
+                  <Stop color="#3c0a0a" offset="1.0" />
                </stops>
             </LinearGradient>
          </fill>
       </Text>
-      <Label layoutX="19.0" layoutY="153.0" text="Nacionalidad" textFill="WHITE">
+      <Label layoutX="19.0" layoutY="212.0" text="Nacionalidad" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtNombre" layoutX="160.0" layoutY="87.0" prefHeight="25.0" prefWidth="201.0" />
-      <TextField fx:id="txtNacionalidad" layoutX="160.0" layoutY="154.0" prefHeight="25.0" prefWidth="201.0" />
-      <Button fx:id="btnGuardar" layoutX="160.0" layoutY="214.0" mnemonicParsing="false" onAction="#registrarArtistaAction" text="Guardar" />
-      <Button fx:id="btnAtras" layoutX="315.0" layoutY="14.0" mnemonicParsing="false" onAction="#atrasAction" prefHeight="25.0" prefWidth="60.0" text="Atras">
+      <TextField fx:id="txtNombre" layoutX="154.0" layoutY="140.0" prefHeight="43.0" prefWidth="201.0" />
+      <TextField fx:id="txtNacionalidad" layoutX="154.0" layoutY="204.0" prefHeight="25.0" prefWidth="201.0" />
+      <Button fx:id="btnGuardar" layoutX="248.0" layoutY="361.0" mnemonicParsing="false" onAction="#registrarArtistaAction" text="Guardar" />
+      <Button fx:id="btnAtras" layoutX="238.0" layoutY="14.0" mnemonicParsing="false" onAction="#atrasAction" prefHeight="41.0" prefWidth="122.0" text="Salir">
          <font>
             <Font name="Yu Gothic UI Semibold" size="12.0" />
          </font>
       </Button>
+      <RadioButton fx:id="radioBtnGrupo" layoutX="110.0" layoutY="279.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="153.0" text="Grupo" />
+      <Button layoutX="35.0" layoutY="361.0" mnemonicParsing="false" onAction="#cargarArchivoArtistas" text="Cargar Archivo" />
+      <Label fx:id="lblNombreArchivo" layoutX="35.0" layoutY="402.0" prefHeight="27.0" prefWidth="316.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_341" class="java.beans.XMLDecoder">
+ <object class="tienda.model.Tienda" id="Tienda0">
+  <void property="artistaView">
+   <void method="add">
+    <object class="tienda.model.Artista" id="Artista0">
+     <void property="codigo">
+      <int>1</int>
+     </void>
+     <void property="listaCancionesView">
+      <void method="add">
+       <object class="tienda.model.Cancion" id="Cancion0">
+        <void property="album">
+         <string>Fruko y sus senos</string>
+        </void>
+        <void property="codigo">
+         <int>1</int>
+        </void>
+        <void property="duracion">
+         <string>3:20</string>
+        </void>
+        <void property="genero">
+         <string>Salsa</string>
+        </void>
+        <void property="nombre">
+         <string>Pal Bailador</string>
+        </void>
+        <void property="nombreArtista">
+         <string>Joe Arroyo</string>
+        </void>
+        <void property="url">
+         <string>https://www.youtube.com/watch?v=LsdSSj90fJI&amp;ab_channel=DiscosFuentesEdimusica</string>
+        </void>
+        <void property="year">
+         <string>2002</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="nacionalidad">
+      <string>Colombiano</string>
+     </void>
+     <void property="nombre">
+      <string>Joe Arroyo</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="tienda.model.Artista" id="Artista1">
+     <void property="codigo">
+      <int>2</int>
+     </void>
+     <void property="listaCancionesView">
+      <void method="add">
+       <object class="tienda.model.Cancion" id="Cancion1">
+        <void property="album">
+         <string>Apple</string>
+        </void>
+        <void property="codigo">
+         <int>2</int>
+        </void>
+        <void property="duracion">
+         <string>3:20</string>
+        </void>
+        <void property="genero">
+         <string>Regaeton</string>
+        </void>
+        <void property="nombre">
+         <string>Te felicito</string>
+        </void>
+        <void property="nombreArtista">
+         <string>Shakira</string>
+        </void>
+        <void property="url">
+         <string>https://www.youtube.com/watch?v=4I25nV9hXGA&amp;ab_channel=shakiraVEVO</string>
+        </void>
+        <void property="year">
+         <string>2023</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="tienda.model.Cancion" id="Cancion2">
+        <void property="album">
+         <string>Caderona</string>
+        </void>
+        <void property="codigo">
+         <int>3</int>
+        </void>
+        <void property="duracion">
+         <string>2:20</string>
+        </void>
+        <void property="genero">
+         <string>Regaeton</string>
+        </void>
+        <void property="nombre">
+         <string>Monotonia</string>
+        </void>
+        <void property="nombreArtista">
+         <string>Shakira</string>
+        </void>
+        <void property="url">
+         <string>https://www.youtube.com/watch?v=j5y6xLpRwx4&amp;ab_channel=shakiraVEVO</string>
+        </void>
+        <void property="year">
+         <string>2018</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="nacionalidad">
+      <string>Colombiana</string>
+     </void>
+     <void property="nombre">
+      <string>Shakira</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="tienda.model.Artista" id="Artista2">
+     <void property="codigo">
+      <int>3</int>
+     </void>
+     <void property="listaCancionesView">
+      <void method="add">
+       <object class="tienda.model.Cancion" id="Cancion3">
+        <void property="album">
+         <string>La ultima</string>
+        </void>
+        <void property="codigo">
+         <int>4</int>
+        </void>
+        <void property="duracion">
+         <string>3:20</string>
+        </void>
+        <void property="genero">
+         <string>Regaeton</string>
+        </void>
+        <void property="nombre">
+         <string>Todo de ti</string>
+        </void>
+        <void property="nombreArtista">
+         <string>Rauw Alejandro</string>
+        </void>
+        <void property="url">
+         <string>https://www.youtube.com/watch?v=CFPLIaMpGrY&amp;ab_channel=RauwAlejandro</string>
+        </void>
+        <void property="year">
+         <string>2022</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="nacionalidad">
+      <string>Colombiano</string>
+     </void>
+     <void property="nombre">
+      <string>Rauw Alejandro</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="tienda.model.Artista" id="Artista3">
+     <void property="codigo">
+      <int>4</int>
+     </void>
+     <void property="grupo">
+      <boolean>true</boolean>
+     </void>
+     <void property="listaCancionesView">
+      <void method="add">
+       <object class="tienda.model.Cancion" id="Cancion4">
+        <void property="album">
+         <string>Hellrock</string>
+        </void>
+        <void property="codigo">
+         <int>5</int>
+        </void>
+        <void property="duracion">
+         <string>4:20</string>
+        </void>
+        <void property="genero">
+         <string>Metal</string>
+        </void>
+        <void property="nombre">
+         <string>Highway to hell</string>
+        </void>
+        <void property="nombreArtista">
+         <string>AC DC</string>
+        </void>
+        <void property="url">
+         <string>https://www.youtube.com/watch?v=gEPmA3USJdI&amp;ab_channel=acdcVEVO</string>
+        </void>
+        <void property="year">
+         <string>1998</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="tienda.model.Cancion" id="Cancion5">
+        <void property="album">
+         <string>Thunder</string>
+        </void>
+        <void property="codigo">
+         <int>6</int>
+        </void>
+        <void property="duracion">
+         <string>2:20</string>
+        </void>
+        <void property="genero">
+         <string>Metal</string>
+        </void>
+        <void property="nombre">
+         <string>Thunderstruck</string>
+        </void>
+        <void property="nombreArtista">
+         <string>AC DC</string>
+        </void>
+        <void property="url">
+         <string>https://www.youtube.com/watch?v=v2AC41dglnM&amp;ab_channel=acdcVEVO</string>
+        </void>
+        <void property="year">
+         <string>1997</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="nacionalidad">
+      <string>Estado Unidense</string>
+     </void>
+     <void property="nombre">
+      <string>AC DC</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="tienda.model.Artista" id="Artista4">
+     <void property="codigo">
+      <int>5</int>
+     </void>
+     <void property="listaCancionesView">
+      <void method="add">
+       <object class="tienda.model.Cancion" id="Cancion6">
+        <void property="album">
+         <string>Nospi</string>
+        </void>
+        <void property="codigo">
+         <int>7</int>
+        </void>
+        <void property="duracion">
+         <string>3:20</string>
+        </void>
+        <void property="genero">
+         <string>Ranchera</string>
+        </void>
+        <void property="nombre">
+         <string>A mi manera</string>
+        </void>
+        <void property="nombreArtista">
+         <string>Vicente Fernandez</string>
+        </void>
+        <void property="url">
+         <string>https://www.youtube.com/watch?v=9F_BRjGi3L8&amp;ab_channel=vicentefernandezVEVO</string>
+        </void>
+        <void property="year">
+         <string>2000</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="nacionalidad">
+      <string>Mexicano</string>
+     </void>
+     <void property="nombre">
+      <string>Vicente Fernandez</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="tienda.model.Artista" id="Artista5">
+     <void property="codigo">
+      <int>6</int>
+     </void>
+     <void property="listaCancionesView">
+      <void method="add">
+       <object class="tienda.model.Cancion" id="Cancion7">
+        <void property="album">
+         <string>Rapgod</string>
+        </void>
+        <void property="codigo">
+         <int>8</int>
+        </void>
+        <void property="duracion">
+         <string>2:20</string>
+        </void>
+        <void property="genero">
+         <string>Rap</string>
+        </void>
+        <void property="nombre">
+         <string>Without me</string>
+        </void>
+        <void property="nombreArtista">
+         <string>Eminem</string>
+        </void>
+        <void property="url">
+         <string>https://www.youtube.com/watch?v=YVkUvmDQ3HY&amp;ab_channel=EminemVEVO</string>
+        </void>
+        <void property="year">
+         <string>2002</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="nacionalidad">
+      <string>Estado Unidense</string>
+     </void>
+     <void property="nombre">
+      <string>Eminem</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="cancionesView">
+   <void method="add">
+    <object idref="Cancion0"/>
+   </void>
+   <void method="add">
+    <object idref="Cancion1"/>
+   </void>
+   <void method="add">
+    <object idref="Cancion2"/>
+   </void>
+   <void method="add">
+    <object idref="Cancion3"/>
+   </void>
+   <void method="add">
+    <object idref="Cancion4"/>
+   </void>
+   <void method="add">
+    <object idref="Cancion5"/>
+   </void>
+   <void method="add">
+    <object idref="Cancion6"/>
+   </void>
+   <void method="add">
+    <object idref="Cancion7"/>
+   </void>
+  </void>
+  <void property="listaUsuarios">
+   <void method="put">
+    <string>1</string>
+    <object class="tienda.model.Usuario" id="Usuario0">
+     <void class="tienda.model.Usuario" method="getField">
+      <string>user</string>
+      <void method="set">
+       <object idref="Usuario0"/>
+       <string>1</string>
+      </void>
+     </void>
+     <void class="tienda.model.Usuario" method="getField">
+      <string>password</string>
+      <void method="set">
+       <object idref="Usuario0"/>
+       <string>1</string>
+      </void>
+     </void>
+     <void class="tienda.model.Usuario" method="getField">
+      <string>correo</string>
+      <void method="set">
+       <object idref="Usuario0"/>
+       <string>1</string>
+      </void>
+     </void>
+     <void property="listaCancionesView">
+      <void method="add">
+       <object idref="Cancion0"/>
+      </void>
+      <void method="add">
+       <object idref="Cancion1"/>
+      </void>
+      <void method="add">
+       <object idref="Cancion2"/>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>2</string>
+    <object class="tienda.model.Usuario" id="Usuario1">
+     <void class="tienda.model.Usuario" method="getField">
+      <string>user</string>
+      <void method="set">
+       <object idref="Usuario1"/>
+       <string>2</string>
+      </void>
+     </void>
+     <void class="tienda.model.Usuario" method="getField">
+      <string>password</string>
+      <void method="set">
+       <object idref="Usuario1"/>
+       <string>2</string>
+      </void>
+     </void>
+     <void class="tienda.model.Usuario" method="getField">
+      <string>correo</string>
+      <void method="set">
+       <object idref="Usuario1"/>
+       <string>2</string>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>3</string>
+    <object class="tienda.model.Usuario" id="Usuario2">
+     <void class="tienda.model.Usuario" method="getField">
+      <string>user</string>
+      <void method="set">
+       <object idref="Usuario2"/>
+       <string>3</string>
+      </void>
+     </void>
+     <void class="tienda.model.Usuario" method="getField">
+      <string>password</string>
+      <void method="set">
+       <object idref="Usuario2"/>
+       <string>3</string>
+      </void>
+     </void>
+     <void class="tienda.model.Usuario" method="getField">
+      <string>correo</string>
+      <void method="set">
+       <object idref="Usuario2"/>
+       <string>3</string>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>4</string>
+    <object class="tienda.model.Usuario" id="Usuario3">
+     <void class="tienda.model.Usuario" method="getField">
+      <string>user</string>
+      <void method="set">
+       <object idref="Usuario3"/>
+       <string>4</string>
+      </void>
+     </void>
+     <void class="tienda.model.Usuario" method="getField">
+      <string>password</string>
+      <void method="set">
+       <object idref="Usuario3"/>
+       <string>4</string>
+      </void>
+     </void>
+     <void class="tienda.model.Usuario" method="getField">
+      <string>correo</string>
+      <void method="set">
+       <object idref="Usuario3"/>
+       <string>4</string>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

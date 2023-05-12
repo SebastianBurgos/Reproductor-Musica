@@ -13,15 +13,23 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import tienda.Aplicacion;
 import tienda.model.Artista;
 import tienda.model.Cancion;
-
+/**
+ * Clase controladora de la vista de administrador
+ * @author Sebastian Burgos Puentes
+ */
 public class AdminController {
+	//Se declara la aplicacion
 	Aplicacion aplicacion;
+
+	//Se instancian las listas observables para las tablas
 	private ObservableList<Artista> listaArtistasData= FXCollections.observableArrayList();
 	private ObservableList<Cancion> listaCancionesData= FXCollections.observableArrayList();
 
+	//Se instancian los filtros de busqueda
 	FilteredList<Cancion> filteredCancionData;
 	FilteredList<Artista> filteredArtistaData;
 
+	//Se declaran los elementos de JavaFX
 	@FXML
     private TableColumn<Cancion, String> colAlbum;
 
@@ -58,6 +66,12 @@ public class AdminController {
     @FXML
     private TextField txtBusquedaArtistas;
 
+    /**
+     * Metodo inicializador
+     * Se declaran los tipos de celdas y nombres de atributos que tendran cada una
+     * Se encuentra tambien el filtro de busqueda con lambdas
+     *
+     */
 	@FXML
     void initialize(){
     	this.colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
@@ -124,6 +138,48 @@ public class AdminController {
 		});
     }
 
+	/**
+	 * Metodo de evento de boton Agregar artista
+	 * @param event
+	 */
+    @FXML
+    void agregarArtistaAction(ActionEvent event) {
+    	aplicacion.mostrarAgregarArtista();
+    }
+
+    /**
+     * Metodo de evento de boton Agregar cancion
+     * @param event
+     */
+    @FXML
+    void agregarCancionAction(ActionEvent event) {
+    	aplicacion.mostrarAgregarCancion();
+    }
+
+    /**
+     * Metodo de evento para salir al login
+     * @param event
+     */
+    @FXML
+    void atrasAction(ActionEvent event) {
+    	aplicacion.mostrarLogin();
+    }
+
+    /**
+     * Metood de evento para abrir interfaz de reporte
+     * @param event
+     */
+    @FXML
+    void generarReporte(ActionEvent event){
+    	aplicacion.mostrarReporte();
+    }
+
+	/**
+	 * Metodo que setea la aplicacion mandada por parametro en el controlador
+	 * Se encuentran las preparaciones de tablas tambien y los filtros de
+	 * busqueda segun parametros
+	 * @param aplicacion
+	 */
     public void setAplicacion(Aplicacion aplicacion) {
 		this.aplicacion = aplicacion;
 
@@ -144,29 +200,22 @@ public class AdminController {
 		tableArtistas.setItems(sortedArtistaData);
 	}
 
+    /**
+     * Metodo para obtener la lista de artistas
+     * @return lista observable de artistas
+     */
     private ObservableList<Artista> getListaArtistas() {
     	listaArtistasData.addAll(aplicacion.obtenerArtistas());
  		return listaArtistasData;
 	}
 
+    /**
+     * Metodo para obtener la lista de canciones
+     * @return lista observable de canciones
+     */
 	private ObservableList<Cancion> getListaCanciones() {
 		listaCancionesData.addAll(aplicacion.obtenerCanciones());
 		return listaCancionesData;
 	}
-
-    @FXML
-    void agregarArtistaAction(ActionEvent event) {
-    	aplicacion.mostrarAgregarArtista();
-    }
-
-    @FXML
-    void agregarCancionAction(ActionEvent event) {
-    	aplicacion.mostrarAgregarCancion();
-    }
-
-    @FXML
-    void atrasAction(ActionEvent event) {
-    	aplicacion.mostrarVentanaPrincipal();
-    }
 
 }

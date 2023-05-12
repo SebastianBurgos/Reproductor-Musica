@@ -1,9 +1,19 @@
 package tienda.model;
 
+import java.io.Serializable;
 
+/**
+ * Clase NodoArbol que contiene los artistas
+ * @author Sebastian Burgos Puentes
+ *
+ * @param <T>
+ */
+public class NodoArbol<T extends Comparable<T>> implements Serializable{
 
-public class NodoArbol<T extends Comparable<T>> {
-
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 	private NodoArbol<T> izquierdo, derecho;
 	private T elemento;
 

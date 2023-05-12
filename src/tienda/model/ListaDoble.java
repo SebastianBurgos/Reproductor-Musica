@@ -1,5 +1,6 @@
 package tienda.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;
@@ -10,8 +11,12 @@ import java.util.ListIterator;
  *
  * @param <T>
  */
-public class ListaDoble<T> implements Iterable<T>{
+public class ListaDoble<T> implements Iterable<T>, Serializable{
 
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 	private Nodo<T> primero, ultimo;
 	private int tamano;
 	ArrayList<T> contactsList = new ArrayList<>();
@@ -461,5 +466,10 @@ public class ListaDoble<T> implements Iterable<T>{
 
 	}
 
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
 
 }
